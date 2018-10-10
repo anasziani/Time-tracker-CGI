@@ -1,0 +1,56 @@
+
+<br/>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-primary my-2 my-sm-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <!-- here -->
+Add new Sprint        </button>
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+      <form id="">
+        <div *ngIf="!sprintRun" class="alignAll container">
+          <div class="card card-body mainCard">
+            <h4>Start a sprint!</h4>
+            <br>
+            <div class="">
+              <select name="selectLength" (change)="selectChangeHandler($event)" class="select">
+                <option value="Instant  (5s) " class="ng-star-inserted"> Instant (5s) </option>
+                <option value="Very short (5min) " class="ng-star-inserted"> Very short (5min) </option>
+                <option value="Short (15min) " class="ng-star-inserted"> Short (15min) </option>
+                <option value="Pomodoro (25min) " class="ng-star-inserted"> Pomodoro (25min) </option>
+                <option value="Long (45min) " class="ng-star-inserted"> Long (45min) </option>
+                <option value="Very long (60min) " class="ng-star-inserted"> Very long (60min) </option>
+              </select>
+
+              <label class="label chooseLenght">Choose length *</label>
+
+            </div>
+
+            <div class="middleContent">
+              <div class="label">
+                <label>Description *</label>
+              </div>
+              <textarea (change)="descriptionChangeHandler($event)" name="description" placeholder="What will you be doing?" class="form-control"
+                rows="3" style="width:200px;"></textarea>
+              <div class="label requiredTag">
+                <label>Required</label></div>
+            </div>
+
+
+            <div>
+              <div class="checkbox">
+                <label>
+                  <input formcontrolname="notify" checked=true type="checkbox" class=""> Notify when completed </label>
+              </div>
+            </div>
+            <div>
+              <button id="btnStart" class="btn btn-primary my-2 my-sm-0"
+              type="submit" (click)="startSprint()">Start</button>
+            </div>
+          </div>
+    </div>
+      </form>
