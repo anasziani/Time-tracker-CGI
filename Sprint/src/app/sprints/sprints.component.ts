@@ -6,8 +6,8 @@ import { DataService } from "../data.service";
 
 @Component({
   selector: "app-sprint-tab",
-  templateUrl: "./sprint-tab.component.html",
-  styleUrls: ["./sprint-tab.component.css"]
+  templateUrl: "./sprints.component.html",
+  styleUrls: ["./sprints.component.css"]
 })
 export class SprintTabComponent implements OnInit {
   constructor(

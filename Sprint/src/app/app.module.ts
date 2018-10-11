@@ -3,14 +3,16 @@ import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
 import { AppComponent } from "./app.component";
-import { AboutComponent } from "./about/about.component";
+import { AboutComponent } from "./home/home.component";
 import { CallbackComponent } from "./callback/callback.component";
-import { SprintTabComponent } from "./sprint-tab/sprint-tab.component";
+import { SprintTabComponent } from "./sprints/sprints.component";
 import { PastSprintComponent } from "./past-sprint/past-sprint.component";
-import { NewSprintComponent } from "./new-sprint/new-sprint.component";
+import { NewSprintComponent } from "./newsprint/newsprint.component";
 import { HttpClientModule } from "@angular/common/http";
-import { OngoingSprintComponent } from "./ongoing-sprint/ongoing-sprint.component";
+import { OngoingSprintComponent } from "./progress/progress.component";
+
 import { NgCircleProgressModule } from "ng-circle-progress";
 
 import {

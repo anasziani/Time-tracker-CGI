@@ -38,14 +38,11 @@ export class ApiService {
     let body = res;
     return body || {};
   }
-  // get all sprint that match with the email
+
   getSprints(): Observable<any> {
     return this.http
       .get(apiUrl + "/sprint/:" + this.data.user, httpOptions)
-      .pipe(
-        map(this.extractData),
-        catchError(this.handleError)
-      );
+      .pipe(map(this.extractData), catchError(this.handleError));
   }
 
   getSprint(id: string): Observable<any> {

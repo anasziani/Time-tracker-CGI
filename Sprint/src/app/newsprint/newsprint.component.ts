@@ -13,9 +13,9 @@ import {
 import { DataService } from "../data.service";
 
 @Component({
-  selector: "app-new-sprint",
-  templateUrl: "./new-sprint.component.html",
-  styleUrls: ["./new-sprint.component.css"]
+  selector: "app-newsprint",
+  templateUrl: "./newsprint.component.html",
+  styleUrls: ["./newsprint.component.css"]
 })
 export class NewSprintComponent implements OnInit {
   sprintRun: boolean = false;

@@ -9,13 +9,13 @@ import {
   NgForm,
   Validators
 } from "@angular/forms";
-import { SprintTabComponent } from "../sprint-tab/sprint-tab.component";
+import { SprintTabComponent } from "../sprints/sprints.component";
 import { DataService } from "../data.service";
 
 @Component({
-  selector: "app-ongoing-sprint",
-  templateUrl: "./ongoing-sprint.component.html",
-  styleUrls: ["./ongoing-sprint.component.css"]
+  selector: "app-progress",
+  templateUrl: "./progress.component.html",
+  styleUrls: ["./progress.component.css"]
 })
 export class OngoingSprintComponent implements OnInit {
   sprintRun: boolean = false;

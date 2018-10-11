@@ -1,11 +1,9 @@
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
   <ul class="nav navbar-nav">
-    <!-- 
-<li>
-      <img _ngcontent-c2="" alt="Sprints Logo" src="../../assets/img/logo.png" style="width: 105px;height:54px;">
-    </li>
-    -->
+     
+    
+    
   </ul>
   <ul class="nav navbar-nav">
     <li>
@@ -33,7 +31,7 @@
 
 </div>
 </nav>
-<app-ongoing-sprint *ngIf="data.ongoingSprint"></app-ongoing-sprint>
+<app-progress *ngIf="data.ongoingSprint"></app-progress>
 
 <router-outlet></router-outlet>
 <app-footer></app-footer>

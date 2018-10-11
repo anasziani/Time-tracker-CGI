@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { OngoingSprintComponent } from "./ongoing-sprint.component";
+import { OngoingSprintComponent } from "./progress.component";
 
 describe("OngoingSprintComponent", () => {
   let component: OngoingSprintComponent;
